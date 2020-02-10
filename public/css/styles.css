@@ -1,0 +1,98 @@
+h1 {
+  color: orangered;
+}
+
+img {
+  width: 25%;
+}
+
+body{
+    width: 40vw;
+    height: 100vh;
+    margin: 0 auto;
+    word-spacing: .5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+}
+
+.flex-parent {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: left;
+ 
+  
+}
+
+.navbar {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 0.5em;
+  border-bottom: 0.2em solid rgb(231, 151, 122);
+  padding: 0.5em 0em;
+}
+
+a:hover{
+    border-bottom: 0.2em solid orangered;
+}
+
+input {
+  padding-left: 0.2em;
+  border-radius: 5px;
+  line-height: 2em;
+  outline: slategrey;
+  border: 1px solid orangered;
+  font-family: monospace;
+  width:35%;
+  padding-left: .5em;
+}
+
+button {
+  background-color: lightsalmon; /* Green */
+  border: none;
+  color: white;
+  padding: 0.5em 0.25em;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 0.9em;
+  border-radius: 8%;
+  height: 80%;
+  cursor: pointer;
+}
+
+
+.sub-parent {
+  flex: 1;
+}
+
+.flex-item1 {
+   
+}
+
+.flex-item3 {
+    margin-top:8vh;
+}
+
+.flex-item5 {
+  color: #6b548f;
+}
+
+.flex-item4{
+    background-color: lightcyan;
+    opacity: .5;
+    padding:0 0.5em;
+    margin-top: 7vh;
+    border-left: 2px solid lightskyblue;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+    border: 2em solid lightcyan;
+}
+
+.flex-item4 > #message-1 {
+text-decoration: red;
+}

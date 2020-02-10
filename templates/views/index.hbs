@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="flex-parent">
+    <div class="sub-parent">
+      <div class="flex-item1"> {{>header}}</div>
+      <div class="flex-item2">
+        <h3>{{name}}</h3>
+      </div>
+      
+        <div class="flex-item3">
+          <form>
+            <input placeholder="location">
+            <button>search</button>
+          </form>
+        </div>
+      
+      <div class="flex-item4">
+        <p id="message-1"></p>
+        {{!-- <hr> --}}
+        <p id="message-2"></p>
+      </div>
+    </div>
+    <hr>
+    <div class="flex-item5">
+      {{!-- {{>footer}} --}}
+    </div>
+  </div>
+
+
+
+
+
+
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
