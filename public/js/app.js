@@ -6,15 +6,15 @@ fetch("http://puzzle.mead.io/puzzle").then(response => {
   });
 });
 
-fetch("http://localhost:3000/weather?address=kznxrattur").then(response => {
-  response.json().then(data => {
-    if (data.error) {
-      console.log(data.error);
-    } else {
-      console.log("weather api ", data);
-    }
-  });
-});
+// fetch("weather?address=kznxrattur").then(response => {
+//   response.json().then(data => {
+//     if (data.error) {
+//       console.log(data.error);
+//     } else {
+//       console.log("weather api ", data);
+//     }
+//   });
+// });
 
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
@@ -26,7 +26,7 @@ weatherForm.addEventListener("submit", e => {
 
   const location = search.value;
 
-  fetch("http://localhost:3000/weather?address=" + location).then(response => {
+  fetch("/weather?address=" + location).then(response => {
     response.json().then(data => {
       if (data.error) {
         console.log(data.error);
